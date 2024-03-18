@@ -4,7 +4,8 @@ from pyrogram.types import Message
 from pyrogram import filters
 from Barath import barath, MODULE
 import config
-from text import TEXT
+
+
 TEXT = [
 "Bhosdike madarchod bhen k lode maachar ki jhaat gandu maa ki chut", "teri tatto ke soudagaR  ",
 "hijde ki aulad",
