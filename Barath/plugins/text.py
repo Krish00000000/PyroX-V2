@@ -26,4 +26,5 @@ TEXT = [
 "Lavde ke bal Lund Chus Lundoos Lund Ke Pasine- Meri Gand Ka Khatmal Moot, Mootna Najayaz paidaish",
 "Goll chuchi Pink Choot Laal Gand = Teri Behane (aaye Haaye)",
 "Ftti Hue choot Brown Gaand Lamke Hue Mummee = Teri Mummy"
+  "gandu"
 ]
