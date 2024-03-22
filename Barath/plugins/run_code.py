@@ -5,7 +5,7 @@ from contextlib import redirect_stdout
 from subprocess import getoutput as run
 from pyrogram import filters
 from pyrogram import Client 
-from Barath import barath as bot
+from Barath import barath
 from config import OWNER_ID
 from datetime import datetime
 
