@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram import enums
 from pyrogram.types import *
-from Barath import barath as bot
+from Barath import barath 
 from config import HANDLER,OWNER_ID
 
 async def is_owner(chat_id: int, user_id: int):
