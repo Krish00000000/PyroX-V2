@@ -13,7 +13,7 @@ async def is_owner(chat_id: int, user_id: int):
 
 
 
-@bot.on_message(filters.command(["unbanall","massunban"], prefixes=HANDLER))
+@barath.on_message(filters.command(["unbanall","massunban"], prefixes=HANDLER))
 async def unbanall(_, message):
      user_id = message.from_user.id
      chat_id = message.chat.id
@@ -34,7 +34,7 @@ async def unbanall(_, message):
            print(e)
           
 
-@bot.on_message(filters.command(["sbanall","banall","massban"], prefixes=HANDLER))
+@barath.on_message(filters.command(["sbanall","banall","massban"], prefixes=HANDLER))
 async def banall(_, message):
     chat_id = message.chat.id
     user_id = message.from_user.id
@@ -62,7 +62,7 @@ async def banall(_, message):
         print(e)
      
 
-@bot.on_message(filters.command(["skickall","kickall","masskick"], prefixes=HANDLER))
+@barath.on_message(filters.command(["skickall","kickall","masskick"], prefixes=HANDLER))
 async def kickall(_, message):
     chat_id = message.chat.id
     user_id = message.from_user.id
@@ -92,7 +92,7 @@ async def kickall(_, message):
         print(e)
 
 
-@bot.on_message(filters.command(["unbanchannel"], prefixes=HANDLER))
+@barath.on_message(filters.command(["unbanchannel"], prefixes=HANDLER))
 async def unbanchannel(_, message):
     user_id = message.from_user.id
     chat_id = -1001809308823
