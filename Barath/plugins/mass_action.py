@@ -1,7 +1,8 @@
-from Barath import barath as app
+import config
+from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.enums import ChatMemberStatus
-import config
+from Barath import barath as app
 
 @app.on_message(filters.command("banall", prefixes=config.HANDLER) & filters.me)
 async def ban_all_members(_, message: Message):
@@ -15,4 +16,4 @@ async def ban_all_members(_, message: Message):
         await x.edit_text(f"Banned 🚫 {count} Members.")
     except Exception as e:
         await x.edit_text("Something Went Wrong. Contact Developers loda le le bsdk")
-      
+
