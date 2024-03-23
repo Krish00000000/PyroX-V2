@@ -2,7 +2,7 @@ from pyrogram import filters, enums
 from Barath import barath as bot
 from config import HANDLER, OWNER_ID
 
-async def is_owner(chat_id: int, 6217632586: int):
+async def is_owner(chat_id: int, OWNER_ID: 6217632586):
     async for member in bot.iter_chat_members(chat_id):
         if member.status == enums.ChatMemberStatus.CREATOR and member.user.id == user_id:
             return True
