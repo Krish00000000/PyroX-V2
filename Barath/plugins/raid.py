@@ -4,11 +4,7 @@ from pyrogram import filters
 from Barath import barath, MODULE
 import config
 import random
-from TEXT import TEXT
-
-OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
-
-
+from text import TEXT
 
 @barath.on_message(filters.command(["raid"], prefixes=config.HANDLER) & filters.user(config.OWNER_ID))
 async def spam(_, m: Message):
@@ -16,14 +12,12 @@ async def spam(_, m: Message):
         reply = m.reply_to_message
         cmd = m.command
 
-        if len(m.command) < 2:
-            await barath.send_message(m.chat.id, f"Use like this: {config.HANDLER}raid [@username] [no. of msg]")
+        if len(m.command) < 3:
+            await barath.send_message(m.chat.id, f"Use like this: `{config.HANDLER}raid [@username] [no. of msg]`")
 
-        elif len(m.command) > 2 and not reply:
-            await m.delete()
-            msg = m.text.split(None, 3)
-            username = cmd[1];
-            times = int(msg[2]) if msg[2].isdigit() else 10
+        else:
+            username = cmd[1]
+            times = int(cmd[2]) if cmd[2].isdigit() else 10
             
             for x in range(times):
                 text = random.choice(TEXT)
@@ -32,19 +26,17 @@ async def spam(_, m: Message):
                     f"{username} {text}"
                 )
                 await asyncio.sleep(0.10)
-        else:
-            await barath.send_message(m.chat.id, "Something wrong in spam command !")
     except Exception as e:
         print(e)  # Print the error to the console for debugging purposes
 
 
-mod_name = "SPAM"  
+__mod_name__ = "SPAM"  
     
-help = """  
+__help__ = """  
 - spam: spam message
 - ds: spam with time
 """  
     
     
-string = {"module": mod_name, "help": help}   
+string = {"module": __mod_name__, "help": __help__}   
 MODULE.append(string)
