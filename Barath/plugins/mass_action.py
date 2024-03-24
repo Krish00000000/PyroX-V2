@@ -1,6 +1,6 @@
 from pyrogram import filters, enums
 from Barath import barath as bot
-from config import HANDLER, OWNER_ID
+from config import OWNER_ID
 
 OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
 
