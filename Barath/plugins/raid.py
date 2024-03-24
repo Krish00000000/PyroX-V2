@@ -4,7 +4,7 @@ from pyrogram import filters
 from Barath import barath, MODULE
 import config
 import random
-import TEXT from TEXT
+from TEXT import TEXT
 
 OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
 
