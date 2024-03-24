@@ -1,2 +1,2 @@
-AFK_IMG = "https://graph.org/file/ca042e845339f73cde0f6.jpg"
-ALIVE_IMG = "https://graph.org/file/054a99dc43dc45e772e4a.jpg"
+AFK_IMG = "https://telegra.ph//file/af8778df92724ee72f259.mp4"
+ALIVE_IMG = "https://telegra.ph//file/af8778df92724ee72f259.mp4"
