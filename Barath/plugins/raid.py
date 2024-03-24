@@ -5,6 +5,8 @@ from Barath import barath, MODULE
 import config
 import random
 
+OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
+
 
 TEXT = [
 "Bhosdike madarchod bhen k lode maachar ki jhaat gandu maa ki chut", "teri tatto ke soudagaR  ",
