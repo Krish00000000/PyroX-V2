@@ -42,6 +42,11 @@ TEXT = [
 "Ftti Hue choot Brown Gaand Lamke Hue Mummee = Teri Mummy"
 ]
 
+
+
+OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
+
+
 @barath.on_message(filters.command(["raid"], prefixes=config.HANDLER) & filters.user(config.OWNER_ID))
 async def spam(_, m: Message):
     try:
