@@ -1,6 +1,6 @@
 import os
 
-OWNER_ID = os.getenv("6217632586",1238234357)
+OWNER_ID = os.getenv("6217632586")
 HANDLER = ["~", ".","!","?","@","$"]
 BARATH = "https://telegra.ph//file/af8778df92724ee72f259.mp4"
 GROUP_ID = os.getenv("GROUP_ID", "-1002119409366")
