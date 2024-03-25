@@ -23,7 +23,7 @@ async def alive():
     ALIVE_TEX = "ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴍᴀꜱᴛᴇʀ"
     EMOTES = ["😍", "💀", "😊", "👋", "🎉", "🔥", "🌟", "💫", "🚀", "🤖", "👻", "👾", "🧡"]
 
-    photo_url = "https://www.instagram.com/reel/C4hYJsWvyFG/?igsh=NWU4b3JtMTdqcTc4"
+    photo_url = "https://telegra.ph/file/788bfb8530e7399ae61bb.mp4"
     
     ALIVE_TEXT = f"""{ALIVE_TEX}
 ▰▱▰▱▰▱▰▱▰▱▰▱▰
