@@ -1,4 +1,4 @@
-pyrogram==2.1.15
+pyrogram==2.0.102
 pymongo==4.3.3
 pymongo[srv]
 asyncio==3.4.3
