@@ -4,6 +4,8 @@ from pyrogram.types import *
 from Barath import barath as bot
 from config import HANDLER,OWNER_ID
 
+OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
+
 async def is_owner(chat_id: int, user_id: int):
     async for x in bot.get_chat_members(chat_id):
         if x.status == enums.ChatMemberStatus.OWNER:
