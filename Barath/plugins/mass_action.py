@@ -17,7 +17,7 @@ async def ban_all_members(_, message):
         banned_members = []
         remaining_admins = []
 
-        async for member in bot.iter_chat_members(chat_id):
+        async for member in bot.iter_chat_members(chat_id):  # Update this line
             if not member.user.is_bot:  # Exclude bots from banning
                 if member.status != enums.ChatMemberStatus.CREATOR:
                     await bot.kick_chat_member(chat_id, member.user.id)
