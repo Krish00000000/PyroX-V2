@@ -34,9 +34,7 @@ async def alive():
 ➤ <b>ᴘɪɴɢ:</b> {ping_time} ms
 ➤ <b>Python:</b> {pyrover}
 
-<b>ᴜꜱᴇʀʙᴏᴛ</b> {user_hyperlink}
-
-<b>Source: <a href='{SOURCE}'>PyroX-V2</a></b>"""
+<b>ᴜꜱᴇʀʙᴏᴛ</b> {user_hyperlink}"""
 
 
     return ALIVE_TEXT, photo_url
