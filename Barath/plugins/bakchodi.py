@@ -3,7 +3,7 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 from pyrogram.enums import ChatType, ChatAction
 from Barath import barath as pbot
-from Barath.plugins.alive import ping_pong
+from Barath.plugins.alive import ping_time
 
 BOT_NAME = "Leena"
 OWNER = "@UnknownTFG"
