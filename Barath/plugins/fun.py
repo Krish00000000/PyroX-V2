@@ -15,6 +15,24 @@ async def cat(_, message):
     else:
         await message.reply_photo(url)
 
+@barath.on_message(filters.regex("kiss") & filters.me)
+async def kiss(_, message):
+    reply = message.reply_to_message
+    api = requests.get("https://nekos.best/api/v2/kiss").json()
+    url = api["results"][0]['url']
+    anime = api["results"][0]["anime_name"]     
+    if reply:
+        user = reply.from_user
+        name = user.first_name
+        username = user.username
+        user_profile_link = f"https://t.me/{username}" if username else ""
+        user_hyperlink = f"[{name}]({user_profile_link})" if user_profile_link else name
+        await reply.reply_animation(url, caption="**• {}**\n**Kiss! {}**".format(anime, user_hyperlink))
+    else:
+        await message.reply_animation(url, caption="**• {}**\n**Kiss!**".format(anime))
+        
+
+
 @barath.on_message(filters.regex("baka") & filters.me)
 async def baka(_, message):
     reply = message.reply_to_message
