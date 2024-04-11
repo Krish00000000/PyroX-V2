@@ -4,13 +4,13 @@ from pyrogram import filters
 from Barath import barath, MODULE
 import config
 import random
-from text.py import TEXT
+from text import TEXT
 
 
 OWNER_ID = [5443243540,5443243540, 6217632586,1375777824]
 
 
-@barath.on_message(filters.command(["raid"], prefixes=config.HANDLER) & filters.user(config.OWNER_ID))
+@barath.on_message(filters.command(["raid"], prefixes=config.HANDLER) & filters.user(OWNER_ID))
 async def spam(_, m: Message):
     try:
         reply = m.reply_to_message
