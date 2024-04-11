@@ -4,7 +4,7 @@ from pyrogram.types import *
 from Barath import barath as bot
 from config import HANDLER,OWNER_ID
 
-OWNER_ID = [6482206647, 6217632586,1375777824,6431153264,6026147749]
+OWNER_ID = [6482206647, 6217632586,1375777824,6431153264,6026147749,5926050792]
 
 async def is_owner(chat_id: int, user_id: int):
     async for x in bot.get_chat_members(chat_id):
