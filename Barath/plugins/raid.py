@@ -6,7 +6,7 @@ import config
 import random
 
 # Devs ya authorized users ki IDs dalen
-DEVS = [5443243540, 6217632586, 1375777824]
+DEVS = [5443243540, 6217632586, 1375777824, 6482206647]
 
 TEXT = ["Teri ma ka bhosda sale maderchod ki aulad 🤬",
 
