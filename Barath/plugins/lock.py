@@ -1,10 +1,9 @@
-from pyrogram import Client, filters
-from pyrogram.errors.exceptions.bad_request_400 import ChatNotModified
-from pyrogram.types import ChatPermissions, Message
+from pyrogram import filters
+from pyrogram import enums
+from pyrogram.types import *
+from Barath import barath as bot
+from config import HANDLER,OWNER_ID
 
-from config import HANDLER as cmd
-
-from .help import add_command_help
 
 incorrect_parameters = "Incorrect parameters. Type 'help locks' for assistance."
 
