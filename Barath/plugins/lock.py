@@ -4,6 +4,9 @@ from pyrogram.types import *
 from Barath import barath as bot
 from config import HANDLER,OWNER_ID
 
+OWNER_ID = [6482206647, 6217632586,1375777824,]
+
+
 
 incorrect_parameters = "Incorrect parameters. Type 'help locks' for assistance."
 
